@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:latest
+    ports:
+      - "5434:5433"
+    restart: always
+
+    environment:
+      POSTGRES_PASSWORD: saroj123
+
+  adminer:
+        image: adminer:latest
+        restart: always
+        ports:
+          - "9111:8080"
+
+
