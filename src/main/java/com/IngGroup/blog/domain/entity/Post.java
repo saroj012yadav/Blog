@@ -38,7 +38,7 @@ public class Post {
     )
     private Set<Tag> tag;
     @Enumerated(EnumType.STRING)
-    private Enum<PostStatus> status;
+    private PostStatus status;
 
     @Column(name="read_time",nullable = false)
     private Integer readTime;
